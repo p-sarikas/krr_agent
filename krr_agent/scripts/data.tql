@@ -1,0 +1,108 @@
+insert
+
+# ==========================================
+# PART 1: STATIC PRIOR KNOWLEDGE 
+# ==========================================
+
+# Define the Rooms
+$kitchen isa room, has room-name "kitchen";
+$living_room isa room, has room-name "living_room";
+$office isa room, has room-name "office";
+$bedroom isa room, has room-name "bedroom";
+
+# Define Room Adjacency
+(room-a: $kitchen,     room-b: $bedroom)     isa adjacent;
+(room-a: $kitchen,     room-b: $living_room) isa adjacent;
+(room-a: $bedroom,     room-b: $office)      isa adjacent;
+(room-a: $living_room, room-b: $office)      isa adjacent;
+
+## --------- DROP LOCATIONS ---------
+
+# --------- DROP LOCATIONS START — OVERWRITE ONLY IF SINGLE DPPL ---------
+# 1. Insert Drop 1 (Dishwasher) -> Kitchen
+$drop1 isa drop-location, has id "loc_drop_1_dishwasher";
+$p1 isa pose, 
+    has pos-x 1.5, has pos-y 0.0, has pos-z 0.0, 
+    has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 1.0;
+(located-target: $drop1, location: $p1) isa physical-location;
+(container: $kitchen, contained-pose: $p1) isa spatial-containment;
+
+# 2. Insert Drop 2 (Tableware) -> Kitchen
+$drop2 isa drop-location, has id "loc_drop_2_tableware";
+$p2 isa pose, 
+    has pos-x 0.3569, has pos-y -1.4761, has pos-z 0.0, 
+    has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 0.0;
+(located-target: $drop2, location: $p2) isa physical-location;
+(container: $kitchen, contained-pose: $p2) isa spatial-containment;
+
+# 3. Insert Drop 3 (Living Room) -> Living Room
+$drop3 isa drop-location, has id "loc_drop_3_livingroom";
+$p3 isa pose, 
+    has pos-x -4.0, has pos-y -3.0, has pos-z 0.0, 
+    has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 0.0;
+(located-target: $drop3, location: $p3) isa physical-location;
+(container: $living_room, contained-pose: $p3) isa spatial-containment;
+
+# 4. Insert Drop 4 (Toys) -> Living Room
+$drop4 isa drop-location, has id "loc_drop_4_toys";
+$p4 isa pose, 
+    has pos-x -8.0, has pos-y 3.0, has pos-z 0.0, 
+    has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 0.0;
+(located-target: $drop4, location: $p4) isa physical-location;
+(container: $office, contained-pose: $p4) isa spatial-containment;
+
+# 5. Insert Drop 5 (General) -> Bedroom
+$drop5 isa drop-location, has id "loc_drop_5_general";
+$p5 isa pose, 
+    has pos-x -2.5096, has pos-y 6.7897, has pos-z 0.0, 
+    has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 0.0;
+(located-target: $drop5, location: $p5) isa physical-location;
+(container: $bedroom, contained-pose: $p5) isa spatial-containment;
+
+# 6. Insert Drop 6 (Bedroom) -> Bedroom
+$drop6 isa drop-location, has id "loc_drop_6_bedroom";
+$p6 isa pose, 
+    has pos-x 2.1527, has pos-y 6.5192, has pos-z 0.0, 
+    has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 0.0;
+(located-target: $drop6, location: $p6) isa physical-location;
+(container: $bedroom, contained-pose: $p6) isa spatial-containment;
+
+# 7. Insert Drop 7 (Trash) -> Living Room
+$drop7 isa drop-location, has id "loc_drop_7_trash";
+$p7 isa pose, 
+    has pos-x -8.6458, has pos-y 1.3064, has pos-z 0.0, 
+    has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 0.0;
+(located-target: $drop7, location: $p7) isa physical-location;
+(container: $living_room, contained-pose: $p7) isa spatial-containment;
+# --------- DROP LOCATIONS END — OVERWRITE ONLY IF SINGLE DPPL ---------
+
+## --------- SCANNING LOCATIONS ---------
+# Scan Kitchen
+
+$sk isa scan-location, has id "scan_kitchen";
+$psk isa pose, has pos-x 0.0, has pos-y 0.0, has pos-z 0.0, has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 1.0;
+(located-target: $sk, location: $psk) isa physical-location;
+(container: $kitchen, contained-pose: $psk) isa spatial-containment;
+
+$sb isa scan-location, has id "scan_bedroom";
+$psb isa pose, has pos-x -2.0, has pos-y 3.0, has pos-z 0.0, has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 1.0;
+(located-target: $sb, location: $psb) isa physical-location;
+(container: $bedroom, contained-pose: $psb) isa spatial-containment;
+
+$so isa scan-location, has id "scan_office";
+$pso isa pose, has pos-x -4.5, has pos-y 3.5, has pos-z 0.0, has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 1.0;
+(located-target: $so, location: $pso) isa physical-location;
+(container: $office, contained-pose: $pso) isa spatial-containment;
+
+$sl isa scan-location, has id "scan_living_room";
+$psl isa pose, has pos-x -4.5, has pos-y 1.5, has pos-z 0.0, has rot-x 0.0, has rot-y 0.0, has rot-z 0.0, has rot-w 1.0;
+(located-target: $sl, location: $psl) isa physical-location;
+(container: $living_room, contained-pose: $psl) isa spatial-containment;
+
+$b isa book, has id "obj_4_book"; 
+
+# ==========================================
+# PART 2: DYNAMIC DISCOVERY 
+# ==========================================
+
+# Example: The robot scans the kitchen and finds "obj_0" at (x: -1.2, y: 0.5)

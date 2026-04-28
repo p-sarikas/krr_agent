@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+
+  <name>krr_agent</name>
+  <version>0.0.0</version>
+  <description>Solution to the KRR final project</description>
+
+  <maintainer email="g.rezendesilva@tudelft.nl">Gustavo Rezende</maintainer>
+  <author email="g.rezendesilva@tudelft.nl">Gustavo Rezende</author>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>geometry_msgs</depend>
+   <depend>nav2_msgs</depend>
+  <depend>lifecycle_msgs</depend>
+
+  <depend>plansys2_msgs</depend>
+  <depend>plansys2_executor</depend>
+  <depend>plansys2_planner</depend>
+  <depend>plansys2_domain_expert</depend>
+  <depend>plansys2_problem_expert</depend>
+
+  <depend>krr_mirte_skills_msgs</depend>
+  <depend>rclpy</depend>
+
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>launch_xml</exec_depend>
+  <exec_depend>plansys2_bringup</exec_depend>
+  <exec_depend>krr_mirte_skills</exec_depend>
+
+  <depend>tf2</depend>
+  <depend>tf2_ros</depend>
+  <depend>ros_typedb_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

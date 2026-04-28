@@ -1,0 +1,237 @@
+define
+
+# ==========================================
+# ATRIBUTES
+# ==========================================
+
+id sub attribute, value string;
+room-name sub attribute, value string;
+
+# Metric Attributes (Position)
+pos-x sub attribute, value double;
+pos-y sub attribute, value double;
+pos-z sub attribute, value double;
+
+# Metric Attributes (Orientation/Quaternion)
+rot-x sub attribute, value double;
+rot-y sub attribute, value double;
+rot-z sub attribute, value double;
+rot-w sub attribute, value double;
+
+# State Attributes
+cleanliness sub attribute, value string;
+fullness sub attribute, value string;
+property-label sub attribute, value string;
+handled sub attribute, value boolean;
+
+
+# ==========================================
+# ENTITIES
+# ==========================================
+
+# --- LOCATIONS ---
+drop-location sub entity,
+    owns id,
+    plays physical-location:located-target,
+    plays correct-drop:target-location;
+
+scan-location sub entity,
+    owns id,
+    plays physical-location:located-target;
+
+pose sub entity,
+    owns pos-x, owns pos-y, owns pos-z,
+    owns rot-x, owns rot-y, owns rot-z, owns rot-w,
+    plays physical-location:location,
+    plays spatial-containment:contained-pose;
+
+room sub entity,
+    owns room-name,
+    plays spatial-containment:container,
+    plays book-clue:likely-room,
+    plays adjacent:room-a,
+    plays adjacent:room-b;
+
+# --- ITEMS ---
+item sub entity,
+    owns id,
+    owns handled,
+    plays physical-location:located-item,
+    plays correct-drop:dropped-item;
+
+# Broad category
+tableware sub item, owns cleanliness; # only tableware has cleanliness attribute
+    cup sub tableware;
+    spoon sub tableware;
+    plate sub tableware;
+
+bottle sub item, owns fullness; # only bottle has fullness attribute
+    beer sub bottle;
+    
+disposable sub item;
+    food sub disposable;
+        bread sub food;
+    tissue sub disposable;
+
+decorative sub item;
+    candle sub decorative;
+    tissue-box sub decorative;
+
+bedroom-related sub item;
+    book sub bedroom-related, plays book-clue:target-book;
+    wooden-cube sub bedroom-related;
+
+toy sub item;
+    fidget-spinner sub toy;
+
+unknown sub item;
+        
+
+# ==========================================
+# RELATIONS
+# ==========================================
+
+physical-location sub relation,
+    relates located-item,
+    relates located-target,
+    relates location;
+
+spatial-containment sub relation,
+    relates container,
+    relates contained-pose;
+
+correct-drop sub relation,
+    relates dropped-item,
+    relates target-location;
+
+book-clue sub relation,
+    relates target-book,
+    relates likely-room;
+
+adjacent sub relation,
+    relates room-a,
+    relates room-b;
+
+# ==========================================
+# SEMANTIC ROUTING RULES
+# ==========================================
+
+# --- 1. Tableware Rules (Depends on Cleanliness) ---
+rule dirty-tableware-to-dishwasher:
+when {
+    $obj isa tableware, has cleanliness "dirty";
+    $drop isa drop-location, has id "loc_drop_1_dishwasher";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+rule clean-tableware-to-cabinet:
+when {
+    $obj isa tableware, has cleanliness "clean";
+    $drop isa drop-location, has id "loc_drop_2_tableware";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+rule unknown-cleanliness-tableware-is-dishwasher:
+when {
+    $obj isa tableware;
+    not { $obj has cleanliness $any; }; # No atribute --> assumed dirty
+    $drop isa drop-location, has id "loc_drop_1_dishwasher";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+# --- 2. Bottle Rules (Depends on Fullness) ---
+rule full-bottle-is-tableware:
+when {
+    $obj isa bottle, has fullness "full";
+    $drop isa drop-location, has id "loc_drop_2_tableware";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+rule empty-bottle-is-trash:
+when {
+    $obj isa bottle, has fullness "empty";
+    $drop isa drop-location, has id "loc_drop_7_trash";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+rule unknown-fullness-bottle-is-trash:
+when {
+    $obj isa bottle;
+    not { $obj has fullness $any; }; # no atribute --> trash
+    $drop isa drop-location, has id "loc_drop_7_trash";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+# --- 3. Broad Category Rules (No attributes needed) ---
+rule disposable-to-trash:
+when {
+    $obj isa disposable;
+    $drop isa drop-location, has id "loc_drop_7_trash";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+rule toy-to-toybox:
+when {
+    $obj isa toy;
+    $drop isa drop-location, has id "loc_drop_4_toys";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+rule decorative-to-livingroom:
+when {
+    $obj isa decorative;
+    $drop isa drop-location, has id "loc_drop_3_livingroom";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+rule bedroom-related-to-bedroom:
+when {
+    $obj isa bedroom-related;
+    $drop isa drop-location, has id "loc_drop_6_bedroom";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+rule unknown-to-general:
+when {
+    $obj isa unknown;
+    $drop isa drop-location, has id "loc_drop_5_general";
+} then {
+    (dropped-item: $obj, target-location: $drop) isa correct-drop;
+};
+
+
+# ==========================================
+# TASK 3 (DETECTIVE CLUES)
+# ==========================================
+
+# Clue 1: drity tableware --> book likely in bedroom
+rule clue-dirty-tableware:
+    when {
+        $t isa tableware, has cleanliness "dirty";
+        $b isa book, has id "obj_4_book";
+        $r isa room, has room-name "bedroom";
+    } then {
+        (target-book: $b, likely-room: $r) isa book-clue;
+    };
+
+# Clue 2: clean tableware --> book likely in living room
+rule clue-clean-tableware:
+    when {
+        $t isa tableware, has cleanliness "clean";
+        $b isa book, has id "obj_4_book";
+        $r isa room, has room-name "living_room";
+    } then {
+        (target-book: $b, likely-room: $r) isa book-clue;
+    };
+
+# No clue about tableware --> book likely in office

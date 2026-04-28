@@ -1,0 +1,14 @@
+<launch>
+  <arg name="world" default="test_scenario1.1.world"/>
+  <arg name="task" default="task1"/>
+  <arg name="task_delay" default="10"/>
+
+  <set_env name="GAZEBO_MODEL_PATH" value="$(env GAZEBO_MODEL_PATH):$(find-pkg-share krr_gazebo)/models"/>
+
+  <include file="$(find-pkg-share mirte_gazebo)/launch/gazebo_mirte_master_navigation.launch.py">
+    <arg name="world" value="$(find-pkg-share krr_gazebo)/worlds/$(var world)"/>
+  </include>
+
+  <include file="$(find-pkg-share krr_agent)/launch/task1.launch.py"/>
+  
+</launch>

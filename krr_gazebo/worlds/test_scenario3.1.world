@@ -1,0 +1,3681 @@
+<sdf version='1.7'>
+  <world name='plasys_house'>
+    <plugin name="get_entity_state_plugin" filename="libgazebo_ros_state.so"/> 
+    <plugin name="get_model_properties_plugin" filename="libgazebo_ros_properties.so"/>
+    <plugin name="model_attachment" filename="libboeing_gazebo_model_attachment_plugin_lib.so"/>
+    <model name='Dressers_O3026d3820106_lod0_7'>
+      <frame name='Dressers_O3026d3820106_lod0::__model__' attached_to='Dressers_O3026d3820106_lod0::main_link'>
+        <pose relative_to='__model__'>-9.5004 8.80021 0 0 -0 0</pose>
+      </frame>
+      <link name='Dressers_O3026d3820106_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://Dressers_O3026d3820106_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://Dressers_O3026d3820106_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='Dressers_O3026d3820106_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <light name='Main_Bedroom_Ceiling_Light' type='point'>
+      <pose>-8 6.3 3 0 -0 0</pose>
+      <diffuse>0.25 0.25 0.25 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    
+    <model name='ChairA_01_001'>
+      <static>1</static>
+      <frame name='aws_robomaker_residential_ChairA_01::__model__' attached_to='aws_robomaker_residential_ChairA_01::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <link name='aws_robomaker_residential_ChairA_01::link'>
+        <inertial>
+          <mass>7.5</mass>
+          <inertia>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+            <ixx>0.217</ixx>
+            <iyy>0.217</iyy>
+            <izz>0.067</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_ChairA_01::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-6.5 0.35 0 0 -0 3.14</pose>
+    </model>
+  
+    <model name='ChairA_01_002'>
+      <static>1</static>
+      <frame name='aws_robomaker_residential_ChairA_01::__model__' attached_to='aws_robomaker_residential_ChairA_01::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <link name='aws_robomaker_residential_ChairA_01::link'>
+        <inertial>
+          <mass>7.5</mass>
+          <inertia>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+            <ixx>0.217</ixx>
+            <iyy>0.217</iyy>
+            <izz>0.067</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_ChairA_01::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-6.5 -0.35 0 0 -0 3.14</pose>
+    </model>
+    
+    <model name='ChairA_01_003'>
+      <static>1</static>
+      <frame name='aws_robomaker_residential_ChairA_01::__model__' attached_to='aws_robomaker_residential_ChairA_01::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <link name='aws_robomaker_residential_ChairA_01::link'>
+        <inertial>
+          <mass>7.5</mass>
+          <inertia>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+            <ixx>0.217</ixx>
+            <iyy>0.217</iyy>
+            <izz>0.067</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_ChairA_01::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-5.5 0.35 0 0 -0 0</pose>
+    </model>
+    
+    <model name='ChairA_01_004'>
+      <static>1</static>
+      <frame name='aws_robomaker_residential_ChairA_01::__model__' attached_to='aws_robomaker_residential_ChairA_01::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <link name='aws_robomaker_residential_ChairA_01::link'>
+        <inertial>
+          <mass>7.5</mass>
+          <inertia>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+            <ixx>0.217</ixx>
+            <iyy>0.217</iyy>
+            <izz>0.067</izz>
+          </inertia>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_ChairA_01/meshes/aws_ChairA_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_ChairA_01::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-5.5 -0.35 0 0 -0 0</pose>
+    </model>
+    
+    <model name='KitchenTable_01_001'>
+      <static>1</static>
+      <frame name='aws_robomaker_residential_KitchenTable_01::__model__' attached_to='aws_robomaker_residential_KitchenTable_01::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <link name='aws_robomaker_residential_KitchenTable_01::link'>
+        <inertial>
+          <mass>12.3</mass>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_KitchenTable_01/meshes/aws_KitchenTable_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_KitchenTable_01/meshes/aws_KitchenTable_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_KitchenTable_01::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-6 0 0 0 -0 0</pose>
+    </model>
+    
+    <model name='floor_Main_bedroom'>
+      <frame name='floor_Main bedroom::__model__' attached_to='floor_Main bedroom::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='floor_Main bedroom::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Main bedroom/meshes/floor_Main bedroom.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Main bedroom/meshes/floor_Main bedroom.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='floor_Main bedroom::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='floor_Living_room'>
+      <frame name='floor_Living room::__model__' attached_to='floor_Living room::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='floor_Living room::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Living room/meshes/floor_Living room.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Living room/meshes/floor_Living room.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='floor_Living room::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='floor_Kitchen'>
+      <pose frame=''>-0.082550 0 0 0 0 0</pose>
+      <frame name='floor_Kitchen::__model__' attached_to='floor_Kitchen::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='floor_Kitchen::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Kitchen/meshes/floor_Kitchen.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Kitchen/meshes/floor_Kitchen.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='floor_Kitchen::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='floor_Bedroom'>
+      <frame name='floor_Bedroom::__model__' attached_to='floor_Bedroom::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='floor_Bedroom::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Bedroom/meshes/floor_Bedroom.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Bedroom/meshes/floor_Bedroom.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='floor_Bedroom::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='Sofas_Oa1bfa586a8f8_lod0_8'>
+      <frame name='Sofas_Oa1bfa586a8f8_lod0::__model__' attached_to='Sofas_Oa1bfa586a8f8_lod0::main_link'>
+        <pose relative_to='__model__'>-7.75 -4.30877 0 0 -0 3.14</pose>
+      </frame>
+      <link name='Sofas_Oa1bfa586a8f8_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://Sofas_Oa1bfa586a8f8_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://Sofas_Oa1bfa586a8f8_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='Sofas_Oa1bfa586a8f8_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='Ottomans_Oe0e3f5670b60_lod0_9'>
+      <frame name='Ottomans_Oe0e3f5670b60_lod0::__model__' attached_to='Ottomans_Oe0e3f5670b60_lod0::main_link'>
+        <pose relative_to='__model__'>-7.75 -3.25004 0 0 -0 0</pose>
+      </frame>
+      <link name='Ottomans_Oe0e3f5670b60_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://Ottomans_Oe0e3f5670b60_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://Ottomans_Oe0e3f5670b60_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='Ottomans_Oe0e3f5670b60_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='LivingRoomChairs_Obc1361750757_lod0_12'>
+      <frame name='LivingRoomChairs_Obc1361750757_lod0::__model__' attached_to='LivingRoomChairs_Obc1361750757_lod0::main_link'>
+        <pose relative_to='__model__'>-8.79752 2.35 0 0 -0 1.57</pose>
+      </frame>
+      <link name='LivingRoomChairs_Obc1361750757_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://LivingRoomChairs_Obc1361750757_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://LivingRoomChairs_Obc1361750757_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='LivingRoomChairs_Obc1361750757_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='SofaTables_Occc3fc60df11_lod0_14'>
+      <frame name='SofaTables_Occc3fc60df11_lod0::__model__' attached_to='SofaTables_Occc3fc60df11_lod0::main_link'>
+        <pose relative_to='__model__'>-9.05025 -0.3 0 0 -0 1.57</pose>
+      </frame>
+      <link name='SofaTables_Occc3fc60df11_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://SofaTables_Occc3fc60df11_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://SofaTables_Occc3fc60df11_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='SofaTables_Occc3fc60df11_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <light name='Living_Room_Ceiling_Light_1' type='point'>
+      <pose>-6.25 2.25 3 0 -0 0</pose>
+      <diffuse>0.25 0.25 0.25 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    
+    <light name='Living_Room_Ceiling_Light_2' type='point'>
+      <pose>-6.25 -2.5 3 0 -0 0</pose>
+      <diffuse>0.25 0.25 0.25 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    
+    <light name='Bathroom_Ceiling_Light' type='point'>
+      <pose>-11 1.05 3 0 -0 0</pose>
+      <diffuse>0.25 0.25 0.25 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    
+    <model name='DishWasher_f2d1aeaead9b_lod0_23'>
+      <frame name='10_DishWasher::__model__' attached_to='10_DishWasher::body'>
+        <pose relative_to='__model__'>-1.80001 -1.80731 0 0 -0 3.14</pose>
+      </frame>
+      <link name='10_DishWasher::body'>
+        <inertial>
+          <mass>30</mass>
+          <pose>0 0 0 0 -0 0</pose>
+          <inertia>
+            <ixx>1.86625</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>2.09025</iyy>
+            <iyz>0</iyz>
+            <izz>1.576</izz>
+          </inertia>
+        </inertial>
+        <pose relative_to='10_DishWasher::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://DishWasher_f2d1aeaead9b_lod0/meshes/visual_LowPoly_10_DishWasher.dae</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <collision name='collision_0'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://DishWasher_f2d1aeaead9b_lod0/meshes/collision_10_DishWasher.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.4</mu>
+                <mu2>0.4</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+              <torsional>
+                <coefficient>1</coefficient>
+                <patch_radius>0</patch_radius>
+                <surface_radius>0</surface_radius>
+                <use_patch_radius>1</use_patch_radius>
+                <ode>
+                  <slip>0</slip>
+                </ode>
+              </torsional>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+          </surface>
+        </collision>
+        <enable_wind>0</enable_wind>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='ServingCarts_Od1716e02c5bd_lod0_28'>
+      <frame name='ServingCarts_Od1716e02c5bd_lod0::__model__' attached_to='ServingCarts_Od1716e02c5bd_lod0::main_link'>
+        <pose relative_to='__model__'>-0.449241 -1.80002 0 0 -0 3.14</pose>
+      </frame>
+      <link name='ServingCarts_Od1716e02c5bd_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://ServingCarts_Od1716e02c5bd_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://ServingCarts_Od1716e02c5bd_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='ServingCarts_Od1716e02c5bd_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='CookingBench_01'>
+      <frame name='aws_robomaker_residential_CookingBench_01::__model__' attached_to='aws_robomaker_residential_CookingBench_01::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <link name='aws_robomaker_residential_CookingBench_01::link'>
+        <inertial>
+          <mass>1</mass>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_CookingBench_01/meshes/aws_CookingBench_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_CookingBench_01/meshes/aws_CookingBench_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_CookingBench_01::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0.5 1.735 0.90361 0 -0 -1.57319</pose>
+      <static>1</static>
+    </model>
+    
+    <model name='Rangehood_01_001'>
+      <static>1</static>
+      <frame name='aws_robomaker_residential_Rangehood_01::__model__' attached_to='aws_robomaker_residential_Rangehood_01::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <link name='aws_robomaker_residential_Rangehood_01::link'>
+        <inertial>
+          <mass>1</mass>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_Rangehood_01/meshes/aws_Rangehood_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>2</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_Rangehood_01::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose>0.5 1.8 2 0 -0 1.57</pose>
+    </model>
+    
+    <model name='KitchenCabinet_01_001'>
+      <static>1</static>
+      <frame name='aws_robomaker_residential_KitchenCabinet_01::__model__' attached_to='aws_robomaker_residential_KitchenCabinet_01::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <link name='aws_robomaker_residential_KitchenCabinet_01::link'>
+        <inertial>
+          <mass>1</mass>
+        </inertial>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_KitchenCabinet_01/meshes/aws_KitchenCabinet_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_KitchenCabinet_01::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose>1.3 0.75 0 0 -0 -1.57319</pose>
+    </model>
+    
+    <model name='Refrigerator_01_001'>
+      <static>1</static>
+      <frame name='aws_robomaker_residential_Refrigerator_01::__model__' attached_to='aws_robomaker_residential_Refrigerator_01::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <link name='aws_robomaker_residential_Refrigerator_01::link'>
+        <inertial>
+          <mass>1</mass>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_Refrigerator_01/meshes/aws_Refrigerator_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_Refrigerator_01/meshes/aws_Refrigerator_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>1</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_Refrigerator_01::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+      <pose>-1.3 1.625 0 0 -0 0</pose>
+    </model>
+    
+    <light name='Kitchen_Ceiling_Light_1' type='point'>
+      <pose>0 0 3 0 -0 0</pose>
+      <diffuse>0.25 0.25 0.25 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    
+    <model name='Headboards_Occ57434fb9f0_lod0_30'>
+      <frame name='Headboards_Occ57434fb9f0_lod0::__model__' attached_to='Headboards_Occ57434fb9f0_lod0::main_link'>
+        <pose relative_to='__model__'>1.70223 3.10002 0 0 -0 -1.57319</pose>
+      </frame>
+      <link name='Headboards_Occ57434fb9f0_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://Headboards_Occ57434fb9f0_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://Headboards_Occ57434fb9f0_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='Headboards_Occ57434fb9f0_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='Nightstands_O14c5f5d1199b_lod0_31'>
+      <frame name='Nightstands_O14c5f5d1199b_lod0::__model__' attached_to='Nightstands_O14c5f5d1199b_lod0::main_link'>
+        <pose relative_to='__model__'>2.5606 4.25013 0 0 -0 -1.57319</pose>
+      </frame>
+      <link name='Nightstands_O14c5f5d1199b_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://Nightstands_O14c5f5d1199b_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://Nightstands_O14c5f5d1199b_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='Nightstands_O14c5f5d1199b_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='HomeOfficeDesks_Oab58b4fda1f7_lod0_33'>
+      <frame name='HomeOfficeDesks_Oab58b4fda1f7_lod0::__model__' attached_to='HomeOfficeDesks_Oab58b4fda1f7_lod0::main_link'>
+        <pose relative_to='__model__'>0.3 7.20007 0 0 -0 0</pose>
+      </frame>
+      <link name='HomeOfficeDesks_Oab58b4fda1f7_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://HomeOfficeDesks_Oab58b4fda1f7_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://HomeOfficeDesks_Oab58b4fda1f7_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='HomeOfficeDesks_Oab58b4fda1f7_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='HomeOfficeDeskChairs_Oaed1cbd04270_lod0_34'>
+      <frame name='HomeOfficeDeskChairs_Oaed1cbd04270_lod0::__model__' attached_to='HomeOfficeDeskChairs_Oaed1cbd04270_lod0::main_link'>
+        <pose relative_to='__model__'>0.318351 6.85596 0 0 -0 3.14</pose>
+      </frame>
+      <link name='HomeOfficeDeskChairs_Oaed1cbd04270_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://HomeOfficeDeskChairs_Oaed1cbd04270_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://HomeOfficeDeskChairs_Oaed1cbd04270_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='HomeOfficeDeskChairs_Oaed1cbd04270_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='Bookcases_Oe43e7e39f537_lod0_35'>
+      <frame name='Bookcases_Oe43e7e39f537_lod0::__model__' attached_to='Bookcases_Oe43e7e39f537_lod0::main_link'>
+        <pose relative_to='__model__'>2 7.3 0 0 -0 0</pose>
+      </frame>
+      <link name='Bookcases_Oe43e7e39f537_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://Bookcases_Oe43e7e39f537_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://Bookcases_Oe43e7e39f537_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='Bookcases_Oe43e7e39f537_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='FloorLamps_Oa651b7cbe4d7_lod0_36'>
+      <frame name='FloorLamps_Oa651b7cbe4d7_lod0::__model__' attached_to='FloorLamps_Oa651b7cbe4d7_lod0::main_link'>
+        <pose relative_to='__model__'>2.65 5.239 0 0 -0 0</pose>
+      </frame>
+      <link name='FloorLamps_Oa651b7cbe4d7_lod0::main_link'>
+        <visual name='visual_RootNode'>
+          <geometry>
+            <mesh>
+              <uri>model://FloorLamps_Oa651b7cbe4d7_lod0/meshes/visual_RootNode.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_RootNode_lod0_0'>
+          <geometry>
+            <mesh>
+              <uri>model://FloorLamps_Oa651b7cbe4d7_lod0/meshes/collision_RootNode_lod0_0.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <pose relative_to='FloorLamps_Oa651b7cbe4d7_lod0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <model name='aws_robomaker_residential_PortraitA_02_plasys'>
+      <frame name='aws_robomaker_residential_PortraitA_02::__model__' attached_to='aws_robomaker_residential_PortraitA_02::link'>
+        <pose relative_to='__model__'>2.875 6.15 1.5 0 -0 1.57</pose>
+      </frame>
+      <link name='aws_robomaker_residential_PortraitA_02::link'>
+        <inertial>
+          <mass>1</mass>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_PortraitA_02_plasys/meshes/aws_PortraitA_01_collision.DAE</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://aws_robomaker_residential_PortraitA_02_plasys/meshes/aws_PortraitA_01_visual.DAE</uri>
+            </mesh>
+          </geometry>
+          <meta>
+            <layer>2</layer>
+          </meta>
+        </visual>
+        <pose relative_to='aws_robomaker_residential_PortraitA_02::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <static>1</static>
+    </model>
+    
+    <light name='Bedroom_Ceiling_Light_1' type='point'>
+      <pose>1 5 3 0 -0 0</pose>
+      <diffuse>0.25 0.25 0.15 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    
+    <light name='Hallway_Ceiling_Light_1' type='point'>
+      <pose>-3 4 3 0 -0 0</pose>
+      <diffuse>0.15 0.15 0.15 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <constant>0.32</constant>
+        <linear>0.01</linear>
+        <quadratic>0.03</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    
+    <model name='wall_0'>
+      <frame name='wall_0::__model__' attached_to='wall_0::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_0::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_0/meshes/wall_0.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_0/meshes/wall_0.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_0::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_1'>
+      <frame name='wall_1::__model__' attached_to='wall_1::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_1::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_1/meshes/wall_1.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_1/meshes/wall_1.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_1::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_7'>
+      <frame name='wall_7::__model__' attached_to='wall_7::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_7::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_7/meshes/wall_7.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_7/meshes/wall_7.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_7::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_8'>
+      <frame name='wall_8::__model__' attached_to='wall_8::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_8::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_8/meshes/wall_8.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_8/meshes/wall_8.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_8::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_9'>
+      <frame name='wall_9::__model__' attached_to='wall_9::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_9::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_9/meshes/wall_9.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_9/meshes/wall_9.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_9::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_10'>
+      <frame name='wall_10::__model__' attached_to='wall_10::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_10::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_10/meshes/wall_10.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_10/meshes/wall_10.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_10::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_11'>
+      <frame name='wall_11::__model__' attached_to='wall_11::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_11::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_11/meshes/wall_11.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_11/meshes/wall_11.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_11::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_12'>
+      <frame name='wall_12::__model__' attached_to='wall_12::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_12::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_12/meshes/wall_12.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_12/meshes/wall_12.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_12::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_13'>
+      <frame name='wall_13::__model__' attached_to='wall_13::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_13::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_13/meshes/wall_13.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_13/meshes/wall_13.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_13::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_14'>
+      <frame name='wall_14::__model__' attached_to='wall_14::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_14::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_14/meshes/wall_14.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_14/meshes/wall_14.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_14::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_19'>
+      <frame name='wall_19::__model__' attached_to='wall_19::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_19::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_19/meshes/wall_19.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_19/meshes/wall_19.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_19::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_20'>
+      <frame name='wall_20::__model__' attached_to='wall_20::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_20::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_20/meshes/wall_20.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_20/meshes/wall_20.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_20::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_21'>
+      <frame name='wall_21::__model__' attached_to='wall_21::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_21::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_21/meshes/wall_21.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_21/meshes/wall_21.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_21::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_27'>
+      <frame name='wall_27::__model__' attached_to='wall_27::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_27::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_27/meshes/wall_27.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_27/meshes/wall_27.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_27::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_28'>
+      <frame name='wall_28::__model__' attached_to='wall_28::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_28::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_28/meshes/wall_28.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_28/meshes/wall_28.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_28::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_29'>
+      <frame name='wall_29::__model__' attached_to='wall_29::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_29::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_29/meshes/wall_29.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_29/meshes/wall_29.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_29::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_31'>
+      <frame name='wall_31::__model__' attached_to='wall_31::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_31::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_31/meshes/wall_31.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_31/meshes/wall_31.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_31::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='wall_33'>
+      <frame name='wall_33::__model__' attached_to='wall_33::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_33::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_33/meshes/wall_33.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_33/meshes/wall_33.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_33::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='doorway_wall_35'>
+      <frame name='doorway_wall_35::__model__' attached_to='doorway_wall_35::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='doorway_wall_35::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://doorway_wall_35/meshes/doorway_wall_35.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://doorway_wall_35/meshes/doorway_wall_35.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='doorway_wall_35::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='doorway_wall_37'>
+      <frame name='doorway_wall_37::__model__' attached_to='doorway_wall_37::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='doorway_wall_37::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://doorway_wall_37/meshes/doorway_wall_37.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://doorway_wall_37/meshes/doorway_wall_37.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='doorway_wall_37::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <state world_name='plasys_house'>
+      <sim_time>6636 694000000</sim_time>
+      <real_time>640 7838479</real_time>
+      <wall_time>1740585828 560682294</wall_time>
+      <iterations>639140</iterations>
+      <model name='Bookcases_Oe43e7e39f537_lod0_35'>
+        <pose>0.0255 -0.0806 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='Bookcases_Oe43e7e39f537_lod0::main_link'>
+          <pose>2.0255 7.2194 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ChairA_01_001'>
+        <pose>-6.5 0.35 0 0 -0 3.14</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_ChairA_01::link'>
+          <pose>-6.5 0.35 0 0 -0 3.14</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ChairA_01_002'>
+        <pose>-6.5 -0.35 0 0 -0 3.14</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_ChairA_01::link'>
+          <pose>-6.5 -0.35 0 0 -0 3.14</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ChairA_01_003'>
+        <pose>-5.5 0.35 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_ChairA_01::link'>
+          <pose>-5.5 0.35 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ChairA_01_004'>
+        <pose>-5.5 -0.35 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_ChairA_01::link'>
+          <pose>-5.5 -0.35 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='CookingBench_01'>
+        <pose>0.5 1.735 0.90361 0 0 -1.57319</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_CookingBench_01::link'>
+          <pose>0.5 1.735 0.90361 0 -0 -1.57319</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='DishWasher_f2d1aeaead9b_lod0_23'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='10_DishWasher::body'>
+          <pose>-1.80001 -1.80731 0 0 -0 3.14</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Dressers_O3026d3820106_lod0_7'>
+        <pose>5.92896 -1.59614 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='Dressers_O3026d3820106_lod0::main_link'>
+          <pose>-3.57144 7.20407 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='FloorLamps_Oa651b7cbe4d7_lod0_36'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='FloorLamps_Oa651b7cbe4d7_lod0::main_link'>
+          <pose>2.65 5.239 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Headboards_Occ57434fb9f0_lod0_30'>
+        <pose>0 -0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='Headboards_Occ57434fb9f0_lod0::main_link'>
+          <pose>1.70223 3.10002 0 0 0 -1.57319</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='HomeOfficeDeskChairs_Oaed1cbd04270_lod0_34'>
+        <pose>-6.1955 -0.35391 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='HomeOfficeDeskChairs_Oaed1cbd04270_lod0::main_link'>
+          <pose>-5.87715 6.50205 0 0 -0 3.14</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='HomeOfficeDesks_Oab58b4fda1f7_lod0_33'>
+        <pose>-6.13096 -0.12056 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='HomeOfficeDesks_Oab58b4fda1f7_lod0::main_link'>
+          <pose>-5.83096 7.07951 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='KitchenCabinet_01_001'>
+        <pose>1.3 0.75 0 0 0 -1.57319</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_KitchenCabinet_01::link'>
+          <pose>1.3 0.75 0 0 -0 -1.57319</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='KitchenTable_01_001'>
+        <pose>-6 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_KitchenTable_01::link'>
+          <pose>-6 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='LivingRoomChairs_Obc1361750757_lod0_12'>
+        <pose>-14.5206 -0.590895 0 0 -0 3.12135</pose>
+        <scale>1 1 1</scale>
+        <link name='LivingRoomChairs_Obc1361750757_lod0::main_link'>
+          <pose>-5.77248 -3.11844 0 0 -0 -1.59183</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Nightstands_O14c5f5d1199b_lod0_31'>
+        <pose>-0 -0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='Nightstands_O14c5f5d1199b_lod0::main_link'>
+          <pose>2.5606 4.25013 0 0 0 -1.57319</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Ottomans_Oe0e3f5670b60_lod0_9'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='Ottomans_Oe0e3f5670b60_lod0::main_link'>
+          <pose>-7.75 -3.25004 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Rangehood_01_001'>
+        <pose>0.5 1.8 2 0 -0 1.57</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_Rangehood_01::link'>
+          <pose>0.5 1.8 2 0 -0 1.57</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Refrigerator_01_001'>
+        <pose>2.50046 -1.29591 0 0 0 -1.59357</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_Refrigerator_01::link'>
+          <pose>2.50046 -1.29591 0 0 0 -1.59357</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='ServingCarts_Od1716e02c5bd_lod0_28'>
+        <pose>0 -0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='ServingCarts_Od1716e02c5bd_lod0::main_link'>
+          <pose>-0.449241 -1.80002 0 0 -0 3.14</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='SofaTables_Occc3fc60df11_lod0_14'>
+        <pose>-0.10392 6.90264 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='SofaTables_Occc3fc60df11_lod0::main_link'>
+          <pose>-9.15417 6.60264 0 0 -0 1.57</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='Sofas_Oa1bfa586a8f8_lod0_8'>
+        <pose>-0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='Sofas_Oa1bfa586a8f8_lod0::main_link'>
+          <pose>-7.75 -4.30877 0 0 -0 3.14</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='aws_robomaker_residential_PortraitA_02_plasys'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='aws_robomaker_residential_PortraitA_02::link'>
+          <pose>2.875 6.15 1.5 0 -0 1.57</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='doorway_wall_35'>
+        <pose>-0.102332 0.043234 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='doorway_wall_35::link'>
+          <pose>-0.102332 0.043234 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='doorway_wall_37'>
+        <pose>-2.49137 -0.011969 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='doorway_wall_37::link'>
+          <pose>-2.49137 -0.011969 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='floor_Bedroom'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='floor_Bedroom::link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='floor_Living_room'>
+        <pose>-0.07509 0.045012 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='floor_Living room::link'>
+          <pose>-0.07509 0.045012 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='floor_Main_bedroom'>
+        <pose>5.20205 -1.55284 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='floor_Main bedroom::link'>
+          <pose>5.20205 -1.55284 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='floor_Main_bedroom_clone'>
+        <pose>0.81425 -1.55326 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='floor_Main bedroom::link'>
+          <pose>0.81425 -1.55326 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_0'>
+        <pose>-2.496 -0.003422 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_0::link'>
+          <pose>-2.496 -0.003422 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_1'>
+        <pose>-2.48791 -0.018402 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_1::link'>
+          <pose>-2.48791 -0.018402 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_10'>
+        <pose>-0.139485 0.079025 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_10::link'>
+          <pose>-0.139485 0.079025 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_11'>
+        <pose>-0.102581 0.073444 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_11::link'>
+          <pose>-0.102581 0.073444 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_12'>
+        <pose>-0.097621 0.008188 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_12::link'>
+          <pose>-0.097621 0.008188 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_13'>
+        <pose>-0.128935 -0.006042 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_13::link'>
+          <pose>-0.128935 -0.006042 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_14'>
+        <pose>8.56808 -1.55714 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_14::link'>
+          <pose>8.56808 -1.55714 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_19'>
+        <pose>-0.10264 0.105205 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_19::link'>
+          <pose>-0.10264 0.105205 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_19_clone'>
+        <pose>-4.62429 -7.72295 0 0 0 -1.57043</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_19::link'>
+          <pose>-4.62429 -7.72295 0 0 0 -1.57043</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_20'>
+        <pose>0.870944 -1.61568 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_20::link'>
+          <pose>0.870944 -1.61568 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_20_clone'>
+        <pose>5.31957 -1.61895 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_20::link'>
+          <pose>5.31957 -1.61895 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_21'>
+        <pose>0.779759 -4.15684 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_21::link'>
+          <pose>0.779759 -4.15684 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_27'>
+        <pose>-0.101765 0.085669 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_27::link'>
+          <pose>-0.101765 0.085669 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_28'>
+        <pose>-0.094699 -0.000858 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_28::link'>
+          <pose>-0.094699 -0.000858 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_29'>
+        <pose>-2.47025 -0.171618 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_29::link'>
+          <pose>-2.47025 -0.171618 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_31'>
+        <pose>-3.6192 -1.5304 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_31::link'>
+          <pose>-3.6192 -1.5304 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_33'>
+        <pose>-2.48796 -0.019528 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_33::link'>
+          <pose>-2.48796 -0.019528 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_33_clone'>
+        <pose>-14.4297 1.35711 0 0 0 -1.5714</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_33::link'>
+          <pose>-14.4297 1.35711 0 0 0 -1.5714</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_7'>
+        <pose>-0.079016 -0.094122 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_7::link'>
+          <pose>-0.079016 -0.094122 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_8'>
+        <pose>-0.175003 -0.008628 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_8::link'>
+          <pose>-0.175003 -0.008628 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='wall_9'>
+        <pose>0.020455 -0.064411 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='wall_9::link'>
+          <pose>0.020455 -0.064411 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='Bathroom_Ceiling_Light'>
+        <pose>-11 1.05 3 0 -0 0</pose>
+      </light>
+      <light name='Bedroom_Ceiling_Light_1'>
+        <pose>1 5 3 0 -0 0</pose>
+      </light>
+      <light name='Hallway_Ceiling_Light_1'>
+        <pose>-3 4 3 0 -0 0</pose>
+      </light>
+      <light name='Kitchen_Ceiling_Light_1'>
+        <pose>0 0 3 0 -0 0</pose>
+      </light>
+      <light name='Living_Room_Ceiling_Light_1'>
+        <pose>-6.25 2.25 3 0 -0 0</pose>
+      </light>
+      <light name='Living_Room_Ceiling_Light_2'>
+        <pose>-6.25 -2.5 3 0 -0 0</pose>
+      </light>
+      <light name='Main_Bedroom_Ceiling_Light'>
+        <pose>-8 6.3 3 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>7.02628 -7.62577 18.9027 -0 0.821795 2.63608</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <audio>
+      <device>default</device>
+    </audio>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    
+    <model name='wall_33_clone'>
+      <frame name='wall_33::__model__' attached_to='wall_33::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_33::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_33/meshes/wall_33.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_33/meshes/wall_33.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_33::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-5.22568 0.010033 0 0 -0 0</pose>
+    </model>
+    
+    
+    <model name='wall_20_clone'>
+      <frame name='wall_20::__model__' attached_to='wall_20::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_20::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_20/meshes/wall_20.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_20/meshes/wall_20.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_20::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>5.30483 -1.65361 0 0 -0 0</pose>
+    </model>
+    
+    
+    <model name='floor_Main_bedroom_clone'>
+      <frame name='floor_Main bedroom::__model__' attached_to='floor_Main bedroom::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='floor_Main bedroom::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Main bedroom/meshes/floor_Main bedroom.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://floor_Main bedroom/meshes/floor_Main bedroom.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='floor_Main bedroom::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0.806903 -0.978864 0 0 -0 0</pose>
+    </model>
+    
+    
+
+    <model name='wall_19_clone'>
+      <frame name='wall_19::__model__' attached_to='wall_19::link'>
+        <pose relative_to='__model__'>0 0 0 0 -0 0</pose>
+      </frame>
+      <static>1</static>
+      <link name='wall_19::link'>
+        <collision name='collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_19/meshes/wall_19.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>2</collide_bitmask>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <meta>
+            <layer>0</layer>
+          </meta>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://wall_19/meshes/wall_19.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose relative_to='wall_19::__model__'>0 0 0 0 -0 0</pose>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-8.60312 3.01663 0 0 -0 0</pose>
+    </model>
+    
+    
+    <model name="drop_1_dishwasher">
+      <pose>1.5 0 0 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1 1 0.01</size> <!-- Adjust the size as needed -->
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 0.01</size> <!-- Adjust the size as needed -->
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient> <!-- Red color -->
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+      <model name='drop_2_tableware'>
+      <pose>0.356888 -1.47612 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    
+    <model name="drop_3_livingroom">
+      <pose>-4 -3 0 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1 1 0.01</size> <!-- Adjust the size as needed -->
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 0.01</size> <!-- Adjust the size as needed -->
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 0</ambient> <!-- Red color -->
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+    
+    <model name="drop_4_toys">
+      <pose>-8 3 0 0 0 0</pose>
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1 1 0.01</size> <!-- Adjust the size as needed -->
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 0.01</size> <!-- Adjust the size as needed -->
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 1</ambient> <!-- Red color -->
+            <diffuse>0 1 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+    
+    
+    <model name='drop_5_general'>
+      <pose>-2.5096 6.78965 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    
+    <model name='drop_6_bedroom'>
+      <pose>2.15269 6.51919 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    
+    <model name='drop_7_trash'>
+      <pose>-8.64577 1.30639 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>1 1 0.01</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>1 1 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 1 0 0</ambient>
+            <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    
+
+
+
+    <model name='obj_3_fidget_spinner'>
+      <link name='link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0.018131 0.005132 0.016889 0 -0 0</pose>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+          <mass>1</mass>
+        </inertial>
+        <collision name='fidget_spinner_col'>
+          <pose>0 0 0 1.57 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://Fidget Spinner/meshes/Spinner_scaled.stl</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <density>1000.0</density>
+        </collision>
+        <visual name='fidget_spinner_vis'>
+          <pose>0 0 0 1.57 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://Fidget Spinner/meshes/Spinner_scaled.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.8627 0.078 0.235 1</diffuse>
+            <ambient>0.8627 0.078 0.235 1</ambient>
+            <specular>0.8627 0.078 0.235 1</specular>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0.05 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.015</length>
+              <radius>0.024</radius>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <density>2710.0</density>
+        </collision>
+        <visual name='cylinder_weight_vis'>
+          <pose>0 0.05 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.015</length>
+              <radius>0.024</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.66 1 1 1</ambient>
+            <diffuse>0.66 1 1 1</diffuse>
+            <specular>0.66 1 1 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.4</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='cylinder_weight2_col'>
+          <pose>-0.0435 -0.025 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.015</length>
+              <radius>0.024</radius>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <density>2710.0</density>
+        </collision>
+        <visual name='cylinder_weight2'>
+          <pose>-0.0435 -0.025 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.015</length>
+              <radius>0.024</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.66 1 1 1</ambient>
+            <diffuse>0.66 1 1 1</diffuse>
+            <specular>0.66 1 1 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.4</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='cylinder_weight3_col'>
+          <pose>0.0435 -0.025 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.015</length>
+              <radius>0.024</radius>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+          <density>2710.0</density>
+        </collision>
+        <visual name='cylinder_weight3'>
+          <pose>0.0435 -0.025 0 0 -0 0</pose>
+          <geometry>
+            <cylinder>
+              <length>0.015</length>
+              <radius>0.024</radius>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.66 1 1 1</ambient>
+            <diffuse>0.66 1 1 1</diffuse>
+            <specular>0.66 1 1 1</specular>
+            <pbr>
+              <metal>
+                <metalness>0.4</metalness>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-6.540465 2.001672 0 0 -0 0</pose>
+    </model>
+
+
+    <model name='obj_4_book'>
+      <static>0</static>
+      <link name='link'>
+        <inertial>
+          <mass>0.1</mass>
+          <pose>-0.018131 0.005132 0.016889 0 -0 0</pose>
+          <inertia>
+            <ixx>0.000156634</ixx>
+            <ixy>1.44022e-08</ixy>
+            <ixz>-5.54417e-08</ixz>
+            <iyy>0.000159174</iyy>
+            <iyz>-6.10552e-06</iyz>
+            <izz>4.8963e-06</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://book_small_3/meshes/book1_red.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <lighting>1</lighting>
+            <ambient>0 0 1 1</ambient>
+            <diffuse>0 0 1 1</diffuse>
+            <specular>0 0 1 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shader type='vertex'>
+              <normal_map>__default__</normal_map>
+            </shader>
+          </material>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://book_small_3/meshes/book1_red.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>-5.067649 6.591007 0 0 -0 0</pose>
+    </model>
+
+
+
+    <model name='obj_10_tissue_box'>
+      <link name='link'>
+        <visual name='visual'>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://tissue_box_1/meshes/box.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://tissue_box_1/materials/scripts</uri>
+              <uri>model://tissue_box_1/materials/textures</uri>
+              <name>mat1</name>
+            </script>
+          </material>
+          <cast_shadows>1</cast_shadows>
+          <transparency>0</transparency>
+        </visual>
+        <collision name='collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose frame=''>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://tissue_box_1/meshes/box.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+      <!-- <static>0</static> -->
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose frame=''>-2.434703 2.208830 0 0 -0 1.57</pose>
+    </model>
+
+  </world>
+</sdf>

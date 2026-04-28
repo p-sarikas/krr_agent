@@ -1,0 +1,9 @@
+<launch>
+  <arg name="world" default="test_scenario1.1.world"/>
+
+  <set_env name="GAZEBO_MODEL_PATH" value="$(find-pkg-share krr_gazebo)/models"/>
+
+  <include file="$(find-pkg-share mirte_gazebo)/launch/gazebo_mirte_master_empty.launch.xml">
+    <arg name="world" value="$(find-pkg-share krr_gazebo)/worlds/$(var world)"/>
+  </include>
+</launch>

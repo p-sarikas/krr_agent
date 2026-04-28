@@ -1,0 +1,6 @@
+(define (problem dummy-t3)
+  (:domain task3)
+  (:objects)
+  (:init (free_gripper))
+  (:goal (free_gripper))
+)
